@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: purple;
+  background-color: yellow;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+  background-color: pink;
+}
+
+/* mouse over link */
+a.one:hover {
+  color: hotpink;
+  background-color: black;
+  border: 2px solid yellow;
+  padding: 10px 20px;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+  background-color: blue;
+}
+</style>
+</head>
+<body>
+
+<h2>Styling a link depending on state</h2>
+
+<a href="#" target="_blank">THIS IS A LINK</a><br><br><br>
+
+<a class="one" href="#">THIS IS ANOTHER LINK</a>
+
+</body>
+</html>
