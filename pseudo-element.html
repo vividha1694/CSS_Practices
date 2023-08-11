@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-line {
+  color: lawngreen;
+  font-variant:small-caps;
+  font-size:x-large;
+  font-style: italic;
+}
+p::first-letter {
+  color:red;
+  font-size:xx-large;
+}
+p.para::first-letter{
+    color: blue;
+    font-size: 300%;
+}
+h2::before {
+    content: url(emoji1.jpg);
+
+}
+h2::first-line{
+    color: purple;
+}
+::marker {
+    color:fuchsia;
+    font-size: 30px;
+}
+p.para1::selection {
+    color:yellow;
+    background: pink;
+}
+</style>
+</head>
+<body>
+<h2>Pseudo-element</h2>
+<h3></h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti accusamus sapiente rem odit? Porro, quia repellat voluptate quae harum accusamus ratione quam recusandae a dicta quisquam temporibus quas possimus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nisi ratione consequatur voluptatem et iste veritatis officiis dolore aut. Aliquam voluptatum fugiat voluptates dolores est voluptatem porro ut vero animi?</p>
+<p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis reiciendis sit sequi! Animi perspiciatis natus repudiandae deleniti laudantium quod facilis dignissimos modi quia magnam! Perspiciatis modi laudantium reprehenderit nisi.</p>
+<p class="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos debitis, hic eveniet dolorum nihil laboriosam quisquam cumque ab enim quasi sint asperiores quibusdam impedit cupiditate, vitae aliquam maiores iusto aliquid.</p>
+<ol>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ol>
+</body>
+</html>
