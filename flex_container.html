@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      /*flex-direction = column,column-reverse,row,row-reverse
+          flex-wrap = wrap,nowrap,wrap-reverse
+          flex-flow = row-wrap
+          justify-content = centre,flex-start,flex-end,space-around,space-between
+          align-items = centre,flex-start,flex-end,stretch,baseline
+          align-content = space-around,space-between,stretch,centre,flex-start,flex-end
+          */
+      .container1 {
+        display: flex;
+        background-color: indianred;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container1 > div {
+        background-color: aqua;
+        margin: 10px;
+        padding: 5px;
+        font-size: 15px;
+        width: 100px;
+        text-align: center;
+        line-height: 5px;
+      }
+      .container2 {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: blue;
+      }
+      .container2 > div {
+        background-color: salmon;
+        width: 50px;
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+        line-height: 5px;
+        font-size: 15px;
+      }
+      .container3 {
+        display: flex;
+        flex-direction: row;
+        background-color: greenyellow;
+        flex-flow: row wrap;
+      }
+      .container3 > div {
+        background-color: gray;
+        width: 100px;
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+        line-height: 5px;
+        font-size: 15px;
+      }
+      .container4 {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: yellowgreen;
+        justify-content: space-between;
+      }
+      .container4 > div {
+        background-color: plum;
+        width: 100px;
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+        line-height: 5px;
+        font-size: 15px;
+      }
+      .container5 {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: yellow;
+        justify-content: center;
+        justify-content: space-between;
+      }
+      .container5 > div {
+        background-color: peru;
+        width: 100px;
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+        line-height: 5px;
+        font-size: 15px;
+      }
+      .container6 {
+        display: flex;
+        background-color: saddlebrown;
+        justify-content: flex-end;
+      }
+      .container6 > div {
+        background-color: darkmagenta;
+        width: 150px;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        line-height: 5px;
+        font-size: 15px;
+      }
+      .container7 {
+        display: flex;
+        background-color: saddlebrown;
+        align-items: flex-end;
+        height: 200px;
+      }
+      .container7 > div {
+        background-color: darkmagenta;
+        width: 150px;
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+        line-height: 5px;
+        font-size: 15px;
+      }
+      .container8 {
+        display: flex;
+        height: 200px;
+        align-items: baseline;
+        background-color: DodgerBlue;
+      }
+
+      .container8 > div {
+        width: 100px;
+        margin: 40px;
+        padding: 20px;
+        text-align: center;
+        line-height: 15px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flex container</h1>
+    <div class="container1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+    <div class="container2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+    <div class="container3">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+    <div class="container4">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+    <div class="container5">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <br />
+    <div class="container6">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+    <div class="container7">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <div class="container8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+    
+  </body>
+</html>
