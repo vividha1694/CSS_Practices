@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style>
+       /*order 
+         flex-grow 
+         flex-shrink 
+         flex-basis 
+         flex = 0 0 100px (shorthand of above three)
+         align-self = centre,flex-start,flex-end  */
+         
+         .flex-container {
+            display : flex;
+            flex-direction: row;
+            background-color: salmon;
+         }
+         .flex-container > div {
+            background-color: chartreuse;
+            color:orangered;
+            width : 100px;
+            margin : 30px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 35px;
+         }
+         .flex-grow {
+            flex-grow: 2;
+         }
+         .flex-shrink {
+            flex-shrink: 2;
+         }
+         .flex-basis {
+             flex-basis: 250px;
+         }
+         .height {
+            height: 200px;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+       <div style="order: 3">1</div>
+       <div style="order: 1">2</div>
+       <div style="order: 2">3</div>
+    </div><br>
+    <div class="flex-container">
+        <div class="flex-grow">1</div>
+        <div>2</div>
+        <div>3</div>
+    </div><br>
+    <div class="flex-container">
+        <div class="flex-shrink">1</div>
+        <div>2</div>
+        <div>3</div>
+    </div><br>
+    <div class="flex-container">
+        <div>1</div>
+        <div class="flex-basis">2</div>
+        <div>3</div>
+    </div><br>
+    <div class="flex-container height">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div>3</div>
+        <div style="align-self: flex-end">4</div>
+    </div>
+</body>
+</html>
