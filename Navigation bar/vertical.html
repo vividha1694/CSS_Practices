@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: lavender;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+            border: 2px solid gray;
+        }
+        li {
+            border-bottom: 2px solid gray;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        li a.active {
+            background-color: blanchedalmond;
+            color:cadetblue;
+        }
+        li a:hover:not(.active) {
+            background-color: silver;
+            color: antiquewhite;
+        }
+
+        li a {
+            display: block;
+            color: purple
+            padding: 9px 18px;
+            text-decoration: none;
+
+        }
+        /* Hover */
+        li a:hover {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: lightcoral">Vertical Navigation Bar</h2>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">News</a></li>
+    </ul>
+    
+</body>
+</html>
