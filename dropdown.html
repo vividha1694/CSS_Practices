@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        .dropbtn {
+           background-color: #56799a;
+           color: white;
+           padding: 20px;
+           font-size: 20px;
+           border: none;
+           cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: blueviolet;
+            min-width: 200px;
+            padding: 15px 20px;
+        }
+        .dropdown-content a {
+            color: whitesmoke;
+            padding: 20px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: goldenrod;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+      <button class="dropbtn">LINKS</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+    </div>
+    
+</body>
+</html>
