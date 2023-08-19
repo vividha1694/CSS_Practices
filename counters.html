@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        counter-reset: section;
+        color: sienna;
+      }
+      h1 {
+        counter-reset: subsection;
+      }
+      h1::before {
+        counter-increment: section;
+        content: "Food " counter(section) ".";
+      }
+      h2::before {
+        counter-increment: subsection;
+        content: counter(section) "." counter(subsection)" ";
+      }
+    </style>
+</head>
+<body>
+    <h1>Snacks</h1>
+    <h2>pizza</h2>
+    <h2>burger</h2>
+    <h2>frenchfries</h2>
+
+    <h1>Bevereges</h1>
+    <h2>hot coffee</h2>
+    <h2>choclate shake</h2>
+    <h2>tea</h2>
+
+    
+</body>
+</html>
